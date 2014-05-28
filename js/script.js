@@ -35,4 +35,25 @@ function mainCtrl($scope) {
     value: 'peach/purple mix',
     hex: '#c7817e'
   }]
-}
+};
+
+
+function btnCtrl($scope) {
+
+  $scope.data = [{
+    class: 'btn btn-standard',
+    value: 'standard'
+  },
+  {
+    class: 'btn btn-success',
+    value: 'success'
+  },
+  {
+    class: 'btn btn-failure',
+    value: 'failure'
+  },
+  {
+    class: 'btn btn-alt',
+    value: 'alternative'
+  }]
+};

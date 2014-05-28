@@ -49,6 +49,69 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
+.btn {
+  font-size: 1em;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+  border: none;
+  padding: 0.625em;
+  text-decoration: none;
+  background-color: #fff;
+  margin: 0.625em;
+  border-width: 0.2em;
+  border-style: solid;
+  border-radius: 0.313em; }
+  .btn.btn-standard {
+    border-color: #3e1b3a;
+    color: #3e1b3a;
+    transition-property: background-color, color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out; }
+    .btn.btn-standard:hover {
+      background-color: #3e1b3a;
+      color: #fff;
+      transition-property: background-color, color;
+      transition-duration: 0.4s;
+      transition-timing-function: ease-out; }
+  .btn.btn-alt {
+    border-color: #96526a;
+    color: #96526a;
+    transition-property: background-color, color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out; }
+    .btn.btn-alt:hover {
+      background-color: #96526a;
+      color: #fff;
+      transition-property: background-color, color;
+      transition-duration: 0.4s;
+      transition-timing-function: ease-out; }
+  .btn.btn-success {
+    border-color: #00cc66;
+    color: #00cc66;
+    transition-property: background-color, color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out; }
+    .btn.btn-success:hover {
+      background-color: #00cc66;
+      color: #fff;
+      transition-property: background-color, color;
+      transition-duration: 0.4s;
+      transition-timing-function: ease-out; }
+  .btn.btn-failure {
+    border-color: #ff3333;
+    color: #ff3333;
+    transition-property: background-color, color;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-out; }
+    .btn.btn-failure:hover {
+      background-color: #ff3333;
+      color: #fff;
+      transition-property: background-color, color;
+      transition-duration: 0.4s;
+      transition-timing-function: ease-out; }
+
 .division-template, #div1, #div2, #div3, #div4, #div5, #div6 {
   width: 100%; }
   .division-template h1, #div1 h1, #div2 h1, #div3 h1, #div4 h1, #div5 h1, #div6 h1 {
@@ -82,3 +145,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 #div6 {
   background-color: #c7817e; }
+
+#button-slide {
+  width: 80%;
+  margin: 0 auto; }
+  #button-slide h1 {
+    font-size: 2em;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1em;
+    color: #3e1b3a; }

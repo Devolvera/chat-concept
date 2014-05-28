@@ -2,7 +2,7 @@
 
 <html ng-app="chatConcept">
   <head>
-  <link href="stylesheets/screen.min.css" media="screen, projection" rel="stylesheet" type="text/css" />
+  <link href="stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
   <link href="stylesheets/print.css" media="print" rel="stylesheet" type="text/css" />
   <!--[if IE]>
       <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -23,8 +23,6 @@
   </a>
 
   <body ng-controller="mainCtrl">
-    <div id="heightstuff">
-    </div>
     <div ng-repeat="item in data">
       <div id="{{ item.id }}" ng-init="init(item.value)">
         <h1>{{ item.value }}</h1>
@@ -32,11 +30,9 @@
       </div>
     </div>
 
-    <div id="button-slide">
+    <div id="button-slide" ng-controller="btnCtrl">
       <h1>Buttons</h1>
-      <a href="">
-        <button class="dark-purple-button">click here</button>
-      </a>
+        <button ng-repeat="item in data" class="{{ item.class }}">{{ item.value }}</button>
     </div>
 
 
