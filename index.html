@@ -9,7 +9,7 @@
   <![endif]-->
 
   <link href='http://fonts.googleapis.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Lato:100' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Lato:100,400' rel='stylesheet' type='text/css'>
 
   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
@@ -32,7 +32,10 @@
 
     <div id="button-slide" ng-controller="btnCtrl">
       <h1>Buttons</h1>
-        <button ng-repeat="item in data" class="{{ item.class }}">{{ item.value }}</button>
+      <h5>Some random button ideas.</h5>
+      <div id="button-div" ng-repeat="item in data">
+        <button  class="{{ item.class }}">{{ item.value }}</button>
+      </div>
     </div>
 
 

@@ -49,6 +49,19 @@ a img {
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block; }
 
+/*  Syntax Quick Reference
+  --------------------------
+  column($ratios: 1, $offset: 0, $cycle: 0, $uncycle: 0, $gutter: $jeet-gutter)
+  span($ratio: 1, $offset: 0)
+  shift($ratios: 0, $col_or_span: column, $gutter: $jeet-gutter)
+  unshift()
+  edit()
+  center($max_width: 1410px, $pad: 0)
+  stack($pad: 0, $align: false)
+  unstack()
+  align($direction: both)
+  cf()
+*/
 .btn {
   font-size: 1em;
   font-family: "Montserrat", sans-serif;
@@ -59,7 +72,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   padding: 0.625em;
   text-decoration: none;
   background-color: #fff;
-  margin: 0.625em;
   border-width: 0.2em;
   border-style: solid;
   border-radius: 0.313em; }
@@ -126,7 +138,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     text-align: center;
     padding-top: 1em;
     font-family: "Lato", sans-serif;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-weight: 100; }
 
 #div1 {
   background-color: #3e1b3a; }
@@ -147,12 +160,55 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-color: #c7817e; }
 
 #button-slide {
-  width: 80%;
-  margin: 0 auto; }
+  *zoom: 1;
+  width: auto;
+  max-width: 800px;
+  float: none;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  color: #3e1b3a;
+  height: 250px;
+  position: relative; }
+  #button-slide:before, #button-slide:after {
+    content: '';
+    display: table; }
+  #button-slide:after {
+    clear: both; }
   #button-slide h1 {
     font-size: 2em;
     font-family: "Montserrat", sans-serif;
     text-transform: uppercase;
     text-align: center;
-    padding: 1em;
+    margin-top: 1em;
+    margin-bottom: 0.3em;
     color: #3e1b3a; }
+  #button-slide h5 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    color: #3e1b3a;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1em; }
+  #button-slide #button-div {
+    *zoom: 1;
+    float: left;
+    display: inline;
+    clear: none;
+    text-align: inherit;
+    padding-left: 0;
+    padding-right: 0;
+    width: 22.75%;
+    margin-left: 0%;
+    margin-right: 3%; }
+    #button-slide #button-div:before, #button-slide #button-div:after {
+      content: '';
+      display: table; }
+    #button-slide #button-div:after {
+      clear: both; }
+    #button-slide #button-div:last-child {
+      margin-right: 0%; }
