@@ -204,7 +204,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     padding-right: 0;
     width: 22.75%;
     margin-left: 0%;
-    margin-right: 3%; }
+    margin-right: 3%;
+    text-align: center; }
     #button-slide #button-div:before, #button-slide #button-div:after {
       content: '';
       display: table; }
